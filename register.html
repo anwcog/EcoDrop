@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>EcoDrop - Register</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <div class="screen active">
+    <div class="logo">🍃</div>
+    <h1>EcoDrop</h1>
+    <p class="subtitle">Create Your Account</p>
+
+    <div id="authNotice" class="notification hidden"></div>
+
+    <input type="text" id="name" placeholder="Full Name" autocomplete="name" required />
+    <input type="email" id="email" placeholder="Email" autocomplete="email" required />
+    <input type="password" id="password" placeholder="Password" autocomplete="new-password" required />
+    <input type="text" id="mobile" placeholder="Mobile Number" autocomplete="tel" required />
+
+    <button id="regBtn" class="primary" onclick="register()">
+      <div class="spinner hidden"></div>
+      <span class="btnText">Register</span>
+    </button>
+
+    <button class="secondary" onclick="window.location.href='index.html'">
+      Back to Login
+    </button>
+  </div>
+</body>
+</html>
