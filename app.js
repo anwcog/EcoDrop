@@ -120,6 +120,8 @@ function passwordInput() { return document.getElementById("password").value; }
 
 // --- LEAGUE TIERS ---
 function getLeagueInfo(points) {
+  if (points >= 1000) return { tier: "SuperSonic", emoji: "🏅", multiplier: 10 };
+  if (points >= 500) return { tier: "Super", emoji: "🌟", multiplier: 8 };
   if (points >= 50) return { tier: "Platinum", emoji: "💎", multiplier: 5 };
   if (points >= 25) return { tier: "Gold", emoji: "🥇", multiplier: 3 };
   if (points >= 10) return { tier: "Silver", emoji: "🥈", multiplier: 2 };
